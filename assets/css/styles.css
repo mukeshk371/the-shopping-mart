@@ -1,0 +1,327 @@
+:root {
+    --primary-color: #0696e8;
+    --secondary-color: #333;
+    --white: #fff;
+    --light: #ccc;
+    --gray: #999;
+    --dark-gray: #666;
+    --success: #2e954e;
+    --error: #d74e4e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    background: #f6f6f6;
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+/* Alignments */
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inlineblock {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.height-100 {
+    min-height: 100vh;
+}
+
+.height-400 {
+    height: 400px !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.width-auto {
+    min-width: auto !important;
+    width: auto !important;
+}
+
+.width-33 {
+    width: 33% !important;
+}
+
+.width-inherit {
+    width: inherit !important;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+.border-radious0 {
+    border-radius: 0 !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*                                           Header                                          */
+
+/*-------------------------------------------------------------------------------------------*/
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.header {
+    background: var(--white);
+    height: 55px;
+    position: fixed;
+}
+
+.logo {
+    width: 35px;
+}
+
+.header h2 {
+    color: #666;
+}
+
+.profile-img {
+    background: url(assets/images/user-profile.png) no-repeat center #eee;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*                                         Sub Header                                        */
+
+/*-------------------------------------------------------------------------------------------*/
+
+.sub-header {
+    background: var(--primary-color);
+    position: fixed;
+    top: 55px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-weight: bold;
+}
+
+li a {
+    height: 45px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+li a svg, li a img {
+    fill: var(--white);
+    vertical-align: middle;
+}
+
+li a:hover:not(.active) {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+
+li a:hover:not(.active) svg, li a:hover:not(.active) img {
+    fill: var(--dark-gray);
+}
+
+.active {
+    background-color: #84D2FF;
+}
+
+.image-bx {
+    display: inline-block;
+    width: 20%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*                                          Card                                             */
+
+/*-------------------------------------------------------------------------------------------*/
+
+.card {
+    background: var(--white);
+    border-radius: 10px;
+    position: relative;
+    margin: 5px;
+    overflow: auto;
+    /* transition: $transition; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header, .card-footer {
+    background: var(--white);
+    width: 100%;
+    height: 40px;
+    line-height: 30px;
+}
+
+.card-header {
+    padding: 5px 10px;
+    border-bottom: 1px dashed #ddd;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-footer {
+    padding: 5px;
+    border-top: 1px dashed #ddd;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-body {
+    overflow: auto;
+}
+
+.card-heading {
+    text-align: left;
+    font-size: 14px;
+}
+
+.card-heading a, .card-heading strong {
+    color: var(--dark-gray);
+}
+
+.card-heading strong span {
+    padding-left: 10px;
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.card-heading a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.card-heading a:hover span {
+    color: var(--primary-color);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*                                         Buttons                                           */
+
+/*-------------------------------------------------------------------------------------------*/
+button {
+    cursor: pointer;
+}
+.btn-primary {
+    background: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*                                         Sidebar                                           */
+
+/*-------------------------------------------------------------------------------------------*/
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+
+.content-bx {
+    width: 100%;
+    padding-left: 20%;
+}
+
+object {
+    width: 100%;
+}
+
+.grocery-showcase {
+    width: 20%;
+    cursor: pointer;
+}
+.grocery-showcase .card:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}

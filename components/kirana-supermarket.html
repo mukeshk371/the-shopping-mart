@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/flex-layout.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/showcase-content-details.js"></script>
+</head>
+
+<body class="bg-transparent" onload="loadCartDetails()">
+    <!-- Start Item Showcase -->
+    <div class="flex-wrap">
+        <div class="grocery-showcase">
+            <div class="card">
+                <div class="card-header flex-row">
+                    <div class="card-heading">
+                        <strong id="item-name"></strong>
+                    </div>
+                    <div class="spacer"></div>
+                    <span id="item-quantity">1Kg</span>
+                </div>
+                <div class="item-image p-1" id="item-image">
+                    <img src="../assets/images/kirana-items/toor-dal.jpeg" alt="">
+                </div>
+                <div class="item-price ptb-1 text-center">
+                    <strong id="item-price">₹80</strong>
+                </div>
+                <div class="card-footer p-05 flex-center-center">
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Item Showcase -->
+</body>
+
+</html>

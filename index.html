@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome To The Shopping Mart</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flex-layout.css">
+    <script type="text/javascript" src="assets/js/javascript.js"></script>
+    <script src="assets/js/showcase-content-details.js"></script>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="header full-width plr-1 flex-start-center">
+        <div class="hamburger-menu mr-1">
+            <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                    <g fill="none" fill-rule="evenodd">
+                        <rect width="20" height="3" y="7" fill="#84D2FF" rx="1.5" />
+                        <rect width="10" height="3" fill="#0696E8" rx="1.5" />
+                        <rect width="20" height="3" y="14" fill="#84D2FF" rx="1.5" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="logo mlr-1">
+            <a href="javascript:void(0)">
+                <img src="assets/images/kart-logo.png" alt="">
+            </a>
+        </div>
+        <div class="heading">
+            <h2>Header</h2>
+        </div>
+        <div class="spacer"></div>
+        <div class="cart flex-start-center">
+            <a href="javascript;void(0)" class="plr-1 flex-start-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                    <path
+                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                        fill="#0696E8" />
+                    <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                <span>My Cart</span>
+            </a>
+        </div>
+        <div class="profile-info">
+            <a href="javascript:void(0);" class="flex-row">
+                <div class="profile-name plr-1">
+                    <strong class="title d-block">Name</strong>
+                    <span class="subtitle d-block">Details</span>
+                </div>
+                <div class="profile-img">
+                    <img src="assets/images/user-profile.png" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Sub Header -->
+    <div class="sub-header full-width flex-start-center">
+        <ul>
+            <li><a class="active flex-start-center" id="load-electronics-content" href="javascript:">
+                    <span class="mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <defs>
+                                <path id="a" d="M0 0h24v24H0V0z" />
+                            </defs>
+                            <clipPath id="b">
+                                <use xlink:href="#a" overflow="visible" />
+                            </clipPath>
+                            <path clip-path="url(#b)"
+                                d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" />
+                        </svg>
+                    </span>
+                    <span>Electronics</span>
+                </a>
+            </li>
+            <li>
+                <a href="components/mobiles-tablets.html" class="flex-start-center">
+                    <span class="mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" />
+                        </svg>
+                    </span>
+                    <span>Mobiles & Tablets</span>
+                </a>
+            </li>
+            <li>
+                <a href="components/tv-appliances.html" class="flex-start-center">
+                    <span class="mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z" />
+                        </svg>
+                    </span>
+                    <span>TVs & Appliances</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" id="load-groceries" class="flex-start-center">
+                    <span class="mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                            <path d="M0 0h24v24H0z" fill="none" /></svg>
+                    </span>
+                    <span>Kirana & Supermarket</span>
+                </a>
+            </li>
+            <li>
+                <a href="components/home-furniture.html" class="flex-start-center">
+                    <span class="mr-1">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"
+                            enable-background="new 0 0 24 24" xml:space="preserve">
+                            <g id="Bounding_Box">
+                                <rect fill="none" width="24" height="24" />
+                            </g>
+                            <g id="Master">
+                                <path
+                                    d="M19,9.3V4h-3v2.6L12,3L2,12h3v8h5v-6h4v6h5v-8h3L19,9.3z M10,10c0-1.1,0.9-2,2-2s2,0.9,2,2H10z" />
+                            </g>
+                        </svg>
+                    </span>
+                    <span>Home & Furniture</span>
+                </a>
+            </li>
+            <li>
+                <a href="components/men-women.html" class="flex-start-center">
+                    <span class="mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z" />
+                            <path
+                                d="M5.5 22v-7.5H4V9c0-1.1.9-2 2-2h3c1.1 0 2 .9 2 2v5.5H9.5V22h-4zM18 22v-6h3l-2.54-7.63C18.18 7.55 17.42 7 16.56 7h-.12c-.86 0-1.63.55-1.9 1.37L12 16h3v6h3zM7.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm9 0c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2z" />
+                        </svg>
+                    </span>
+                    <span>Men & Women</span>
+                </a>
+            </li>
+            <li>
+                <a href="components/offers.html" class="flex-start-center">
+                    <span class="mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M23 12l-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68L23 12zm-10 5h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                        </svg>
+                    </span>
+                    <span>Offers</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Sub Haeder -->
+
+    <!-- Start Layout -->
+    <div class="layout pt-100">
+        <div class="flex-row">
+            <div class="sidebar card border-radious0 m-0">
+                <div class="card-header flex-row">
+                    <div class="card-heading">
+                        <strong>Filters</strong>
+                    </div>
+                    <div class="spacer"></div>
+                    <a href="javascript:void(0)">Clear All</a>
+                </div>
+            </div>
+            <div class="content-bx">
+                <div class="p-05" id="content"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Layout -->
+</body>
+
+</html>
