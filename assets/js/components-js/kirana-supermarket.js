@@ -84,8 +84,6 @@ function loadShowcase() {
 }
 
 
-
-
 var n = 1;
 
 function addToCart() {
