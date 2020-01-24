@@ -156,6 +156,17 @@ a:hover {
     color: #666;
 }
 
+.profile-bx {
+    color: inherit;
+}
+.profile-bx:hover {
+    text-decoration: none;
+}
+.profile-bx:hover strong,
+.profile-bx:hover span {
+    color: var(--primary-color);
+}
+
 .profile-img {
     background: url(assets/images/user-profile.png) no-repeat center #eee;
     background-size: contain;
