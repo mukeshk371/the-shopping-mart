@@ -1,3 +1,4 @@
+/* Start Create Item List */
 function createItemList(details) {
     /* Start Card Header */
     var productName = document.createElement("STRONG");
@@ -11,10 +12,11 @@ function createItemList(details) {
     spacer.classList.add("spacer");
 
     var productWeight = document.createElement("SPAN");
-    productWeight.innerHTML = details.weight + "Kg";
+    productWeight.setAttribute('id', 'product-weight');
+    productWeight.innerHTML = details.weight;
 
     var cardHeader = document.createElement("DIV");
-    cardHeader.classList.add("card-header", "flex-row");
+    cardHeader.classList.add("card-header", "flex-start-center");
     cardHeader.appendChild(cardHeading);
     cardHeader.appendChild(spacer);
     cardHeader.appendChild(productWeight);
@@ -65,20 +67,36 @@ function createItemList(details) {
 
     return groceryShowcase;
 }
+/* End Create Item List */
 
+/* Start Create Filters */
 function createFilters() {
 
 }
+/* End Create Filters */
 
-function loadShowcase() {
+function loadGroceryShowcase() {
     var content = document.getElementById('content');
 
     while(content.firstChild) {
 		content.removeChild(content.firstChild);
     }
     
-    for(var i = 0; i < showcaseItems.length; i++) {
-        var li = createItemList(showcaseItems[i]);
+    for(var i = 0; i < groceryShowcaseItems.length; i++) {
+        var li = createItemList(groceryShowcaseItems[i]);
+        content.appendChild(li);
+    }
+}
+
+function loadElectronicsShowcase() {
+    var content = document.getElementById('content');
+
+    while(content.firstChild) {
+		content.removeChild(content.firstChild);
+    }
+    
+    for(var i = 0; i < electronicsShowcaseItems.length; i++) {
+        var li = createItemList(electronicsShowcaseItems[i]);
         content.appendChild(li);
     }
 }

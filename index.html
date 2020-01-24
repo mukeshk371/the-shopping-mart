@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/flex-layout.css">
     <script src="assets/js/showcase-items.js"></script>
     <script type="text/javascript" src="assets/js/javascript.js"></script>
-    <script src="assets/js/components-js/kirana-supermarket.js"></script>
+    <script src="assets/js/showcase.js"></script>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
     <div class="sub-header full-width flex-start-center">
         <ul>
             <li>
-                <a class="active flex-start-center" id="load-electronics-content" href="javascript:">
+                <a class="active flex-start-center" id="load-electronics-content" onclick="loadElectronicsShowcase()" href="javascript:">
                     <span class="mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
                             height="24" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0)" id="load-groceries" onclick="loadShowcase()" class="flex-start-center">
+                <a href="javascript:void(0)" id="load-groceries" onclick="loadGroceryShowcase()" class="flex-start-center">
                     <span class="mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path
@@ -169,12 +169,22 @@
     <div class="layout pt-100">
         <div class="flex-row">
             <div class="sidebar card border-radious0 m-0">
-                <div class="card-header flex-row">
-                    <div class="card-heading">
+                <div class="card-header flex-start-center">
+                    <div class="card-heading flex-start-center">
                         <strong>Filters</strong>
                     </div>
                     <div class="spacer"></div>
                     <a href="javascript:void(0)">Clear All</a>
+                </div>
+                <div class="card-body filter-bx">
+                    <div class="filtr-bx" id="filter-bx">
+                        <div href="javascript:void(0)" class="collapsable-div d-block p-1" onclick="collapseDiv()">
+                            <span>PRICE</span>
+                        </div>
+                        <div class="p-1 card hide" id="filter-content">
+                            <span>content</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="content-bx">
