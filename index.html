@@ -7,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome To The Shopping Mart</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/flex-layout.css">
+    <script src="assets/js/showcase-items.js"></script>
     <script type="text/javascript" src="assets/js/javascript.js"></script>
-    <script src="assets/js/showcase-content-details.js"></script>
+    <script src="assets/js/components-js/kirana-supermarket.js"></script>
 </head>
 
 <body>
@@ -35,11 +34,12 @@
             </a>
         </div>
         <div class="heading">
-            <h2>Header</h2>
+            <h2>The Shopping Mart</h2>
         </div>
         <div class="spacer"></div>
-        <div class="cart flex-start-center">
-            <a href="javascript;void(0)" class="plr-1 flex-start-center">
+        <div class="cart flex-start-center relative">
+            <div class="badge flex-center-center" id="badge"></div>
+            <a href="javascript:void(0);" class="plr-1 flex-start-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                     <path
                         d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
@@ -52,8 +52,8 @@
         <div class="profile-info">
             <a href="javascript:void(0);" class="flex-row">
                 <div class="profile-name plr-1">
-                    <strong class="title d-block">Name</strong>
-                    <span class="subtitle d-block">Details</span>
+                    <strong class="title d-block">Mukesh Kumar</strong>
+                    <span class="subtitle d-block">Gurgaon, Haryana</span>
                 </div>
                 <div class="profile-img">
                     <img src="assets/images/user-profile.png" alt="">
@@ -66,7 +66,8 @@
     <!-- Start Sub Header -->
     <div class="sub-header full-width flex-start-center">
         <ul>
-            <li><a class="active flex-start-center" id="load-electronics-content" href="javascript:">
+            <li>
+                <a class="active flex-start-center" id="load-electronics-content" href="javascript:">
                     <span class="mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
                             height="24" viewBox="0 0 24 24">
@@ -84,7 +85,7 @@
                 </a>
             </li>
             <li>
-                <a href="components/mobiles-tablets.html" class="flex-start-center">
+                <a href="javascript:void(0)" class="flex-start-center">
                     <span class="mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path d="M0 0h24v24H0z" fill="none" />
@@ -108,7 +109,7 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0)" id="load-groceries" class="flex-start-center">
+                <a href="javascript:void(0)" id="load-groceries" onclick="loadShowcase()" class="flex-start-center">
                     <span class="mr-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path
@@ -177,7 +178,7 @@
                 </div>
             </div>
             <div class="content-bx">
-                <div class="p-05" id="content"></div>
+                <div class="p-05 flex-wrap" id="content"></div>
             </div>
         </div>
     </div>
